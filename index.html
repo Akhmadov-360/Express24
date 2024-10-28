@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Vite App</title>
+  </head>
+  <body class="box-border m-0 p-0">
+    <div class="flex flex-col items-center justify-center">
+      <header class="fixed top-0 left-0 right-0 px-2 bg-[#FFFFFF] z-[1000] h-[78px] border-solid border-[#F6F6FB] border flex items-center justify-between">
+        <div>
+          <a href="./index.html">
+            <img src="./src/img/express24-removebg-preview.png" alt="Express 24" class="w-[148px] h-[78px]">
+          </a>
+        </div>
+        <div class="flex items-center justify-center gap-3">
+          <div class="flex items-center justify-center gap-2">
+            <div class="flex items-center justify-center border-2 border-[#D1D1D6] rounded-xl  py-[14px] px-[14px] gap-2">
+              <i class='bx bx-search' style='color:#808080'></i>
+              <input type="text" id="textInput" placeholder="Заведение, блюдо, товар или кухню" class="outline-none w-[250px] font-normal text-[16px] leading-5 font-Inter">
+              <button id="clearButton" class="hidden"><i class='bx bxs-x-circle' style='color:#aeaeb2'></i></button>
+            </div>
+            <button class="py-[16px] px-[14px] bg-[#FAE100] rounded-xl text-[18px] leading-5 font-medium text-[#000000] transition duration-300 hover:bg-[#FFD300] active:bg-[#FFC700] font-Inter">Найти</button>
+          </div>
+        </div>
+        <a id="favourite-btn" class="flex justify-center items-center gap-1 px-[16px] py-[14px] font-Inter font-bold text-[18px] bg-[#f6f6fb] rounded-[12px] transition duration-200 hover:bg-[#e1e1e1] active:bg-[#FFF684]" href="./src/Pages/favorite.html">
+          <i class='bx bxs-heart bx-sm' style='color:#ff4d4f' ></i>
+          Избранные
+        </a>
+      </header>
+      <h1 class="text-[34px] text-[#1a1a18] font-Inter font-bold mt-[120px]">Рестораны</h1>
+      <div id="categories" class="flex items-center justify-center gap-2 px-5 flex-wrap mt-2"></div>
+      <main id="main" class="mb-3 grid grid-cols-3 justify-center items-center gap-5 mt-8 px-5">
+      </main>
+    </div>
+    <script type="module" src="./src/JavaScript/main.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  </body>
+</html>
